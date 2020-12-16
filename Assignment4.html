@@ -1,0 +1,49 @@
+
+<html>
+<head>
+	<title>sample chart</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<h1>Worldwide market share of the browsers in 2020</h1>
+<canvas id="myCanvas" width="700" height="720" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "15px Arial";
+ctx.lineWidth = 1.5;
+ctx.strokeText("browser ^",32,20);
+ctx.strokeText("others-",0,70);
+ctx.strokeText("Opera-",0,120);
+ctx.strokeText("edge-",0,170);
+ctx.strokeText("Samsang Internet-",0,220);
+ctx.strokeText("firefox  -",0,270);
+ctx.strokeText("safari  -",0,320);
+ctx.strokeText("Chrome    -",0,370);
+ctx.moveTo(30,400);
+ctx.lineTo(30,0);
+ctx.moveTo(0,370);
+ctx.lineTo(500,370);
+ctx.stroke();
+ctx.strokeText("|",130,380);
+ctx.strokeText("5",130,395);
+ctx.strokeText("|",230,380);
+ctx.strokeText("10",230,395);
+ctx.strokeText("|",330,380);
+ctx.strokeText("15",330,395);
+ctx.strokeText("|",430,380);
+ctx.strokeText("20",430,395);
+ctx.strokeText("MARKET SHARE IN %age ->",435,370);
+
+ctx.moveTo(130, 303); //(5,40)
+ctx.lineTo(230, 245); //(10,75)
+ctx.moveTo(230, 245);
+ctx.lineTo(330, 187); //(15,140)
+ctx.moveTo(330, 187);
+ctx.lineTo(430, 70);
+ctx.stroke();
+</script>
+</body>
+</html>
