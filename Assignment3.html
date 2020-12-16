@@ -1,0 +1,26 @@
+
+<html>
+<title>Online Videos</title>
+<div align="center">
+<img width="220" height="70"src="opera.png"/>
+<h2>Amazing online videos</h2>
+<div>
+<div align="center">
+<video width="720" height="440" id="vid1">
+<source src="Footage Of Sunset View.mp4" type="video/mp4">
+</video>
+<br>
+<button type="button" onclick="playPause()">Play</button>
+<button type="button" onclick="playPause()">Pause</button>
+</div>
+<script>
+var Vid = document.getElementById("vid1");
+function playPause() 
+{ 
+if (Vid.paused) 
+ Vid.play(); 
+else 
+ Vid.pause(); 
+} 
+</script>
+</html>
